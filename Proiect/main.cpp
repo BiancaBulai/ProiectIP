@@ -281,88 +281,11 @@ bool pozitieApasata(int x, int y)
 	return true;
 }
 
-int citireInputMeniu()
-{
-    int input;
-    cin>>input;
-    while(input<1 || input>4)
-    {
-        cout << "Introduceti o valoare intre 1 si 4\n";
-        cin>>input;
-    }
-    return input;
-}
-void afisareMeniu()
-{
-    cout<<"\n\n\n\t\t\tMINESWEEPER\n\n\n"<<endl;
-    cout<<"MENIU - Alegeti intre 1-4: "<<endl;
-    cout<<"1. Incepe un nou joc"<<endl;
-    cout<<"2. Statistica"<<endl;
-    cout<<"3. Optiuni"<<endl;
-    cout<<"4. Exit"<<endl;
-}
-
-int startJoc()
-{
-   /* cout<<"Doriti jucati?"<<endl;
-    cout<<"Alegeti y pentru da sau n pentru nu"<<endl;
-   cin>>opt;
-   while(opt!='y'&& opt!='n')
-   {
-       cout<<"Doriti sa jucati?"<<endl;
-       cin>>opt;
-   }
-
-    return opt;*/
-}
-
-int afisareStatistica()
-{
-
-}
-
-int afisareOptiuni()
-{
-
-}
-
-int inputOptiune()
-{
-
-}
-int meniu()
-{
-     bool quit = false;
-    do{
-        cout<<endl;
-        afisareMeniu();
-        cout<<endl;
-        switch(citireInputMeniu())
-        {
-        case 1:
-            system("CLS");
-            startJoc();
-            break;
-        case 2:
-            system("CLS");
-            afisareStatistica();
-            break;
-        case 3:
-            system("CLS");
-            afisareOptiuni();
-            char opt ;
-            opt= inputOptiune();
-            break;
-        case 4:
-            quit = true;
-        }
-
-    }while(!quit);
-}
 
 int main()
 {
-   // meniu();
+
+ cout<<"\n\n\n\t\t\tMINESWEEPER\n\n"<<endl;
 
     while(true)
     {
@@ -413,7 +336,6 @@ int main()
 
 
 	cin >> n;
-
     return 0;
 }
 
